@@ -1,2 +1,19 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿// Программа которая принимает трех значное число и в конце выдает последнию его цифру
+
+int ReadInt(string msg)  // обьявляем Реддит и строковый параметр msg
+{
+
+    Console.WriteLine(msg); // пишет в консоль параметр msg
+    string num = Console.ReadLine(); // функция считывает строки с консоля терминала 
+    int number; // добавляем переменную намбер
+    number = int.Parse(num);  // как результат преобразования строки в число
+    return number; // возврат из функции
+} // описание функции заканчивается 
+int number = ReadInt("Введите трех значное число "); //Вызывает функцию реддит и передаем в эту функцию введите трехзначное число . результат отправлем в намбер
+if (number>99 & 1000>number) // проверяет число
+    {   
+        int lastDigit=number%10;  // апеременная последнее число равно деление намб на 10
+        Console.WriteLine("последняя цифра " + lastDigit); // выводит число последние
+    }   
+else
+    Console.WriteLine("чисол не трех значное" );
