@@ -1,2 +1,23 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿// Программа которая будет принимать на вход два числа и выводить , является ли второе число кратным первому
+ // если число 2 не кратно числу 1, то программа выводит остаток от деления
+
+ int ReadInt(string msg)  // обьявляем Реддит и строковый параметр msg
+{
+
+    Console.WriteLine(msg); // пишет в консоль параметр msg
+    string num = Console.ReadLine(); // функция считывает строки с консоля терминала 
+    int number; // добавляем переменную намбер
+    number = int.Parse(num);  // как результат преобразования строки в число
+    return number; // возврат из функции
+} // описание функции заканчивается . Функция целого числа
+int num1 = ReadInt("Введите первое число");
+int num2 = ReadInt("Введите вотрое число");
+int result = num1 % num2;
+if (result==0)
+    {
+        Console.WriteLine("первое число кратно второму");
+    }
+else
+    {
+        Console.WriteLine("не кратно " + result );
+    }
