@@ -7,5 +7,6 @@ int n = 0;
 while (n<N)
 {
     n=n+2;
-    Console.WriteLine(n);
+    Console.Write(n+",");
 }
+Console.Write("Конец");
