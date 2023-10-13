@@ -10,7 +10,7 @@ void FillArray(int[] collection)
             collection [index] = new Random().Next(1,50);
             index++;
         }
-    }
+    }   // метод заполнения массива
 
 void PrintArray(int[] col)
     {
@@ -21,7 +21,7 @@ void PrintArray(int[] col)
             Console.WriteLine(col[position]);
             position++;
         }
-    }
+    } // метод печати массива
 
 
 
