@@ -21,8 +21,7 @@ void PrintArray(int[] col)   // метод печати массива
         }
     }
 
-int indexOf(int[]collection, int find)  //метод  
-    {
+int indexOf(int[]collection, int find)  //метод     
         int count = collection.Length;
         int index = 0;
         int position = 0;
