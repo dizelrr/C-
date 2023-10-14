@@ -15,7 +15,7 @@ if  (quoter>0 & quoter<5)
             case 1: System.Console.WriteLine("x>0 & y>0");break;
             case 2: System.Console.WriteLine("x<0 & y>0");break;
             case 3: System.Console.WriteLine("x<0 & y<0");break;
-            case 4: System.Console.WriteLine("x>0 & y<0");break;
+            default: System.Console.WriteLine("x>0 & y<0");break; //default - если ничего не подошло
             
         }
        
