@@ -13,9 +13,8 @@ int ReadInt(string msg)
 int number = ReadInt("Введите трех значное число ");
 if (number>99 & 1000>number)
     {   
-        int SecondDigit=number/10;
-        int result=SecondDigit%10;
-        Console.WriteLine("вторая цифра " + result);
+        int SecondDigit=number/10%10;
+        Console.WriteLine("вторая цифра " + SecondDigit);
     }   
 else
     Console.WriteLine("чисол не трех значное" );
