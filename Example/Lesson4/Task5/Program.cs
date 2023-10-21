@@ -1,4 +1,7 @@
-﻿int[] createMassive(int length){ // создание массива, указание длины.
+﻿// Сортировка массива случайных чисел
+
+
+int[] createMassive(int length){ // создание массива, указание длины.
 int[] massive = new int [length]; // создаем новый массив с указанием размера.
 int i = 0;
 while(i < massive.Length){ // пока счётчик меньше размера массива
