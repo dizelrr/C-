@@ -2,7 +2,7 @@
 // 3, 5 -> 243 (3⁵)
 // // 2, 4 -> 16
 
-int ReadInt(string msg)  
+int ReadInt(string msg)  // функция ввода числа
     {
     Console.WriteLine(msg); 
     string num = Console.ReadLine();  
@@ -10,7 +10,7 @@ int ReadInt(string msg)
     number = int.Parse(num);  
     return number; 
     }
-int  Step( int number1, int number2)
+int  Step( int number1, int number2)  // расчитываем степень числа
     {
         int step = 1;
         for ( int i = 0; i < number2 ; i++)
