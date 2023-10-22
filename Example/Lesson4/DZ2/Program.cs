@@ -6,18 +6,17 @@
 int ReadInt(string msg)  
     {
     Console.WriteLine(msg); 
-    string num = Console.ReadLine();  
-    int number; 
-    number = int.Parse(num);  
-    return number; 
+    string readInt = Console.ReadLine();  
+    int result = int.Parse(readInt);  
+    return result; 
     }
-int Summa( int number)
+int Summa(int number)
     {
-        result = 0;
+        int result = 0;
         while (number > 0)
             {
-                result += number%10;
-                number = number/10;
+                result += number % 10;
+                number = number / 10;
             }
                 return result;
     }
@@ -25,4 +24,4 @@ int Summa( int number)
 
 int number = ReadInt("Введите  число ");
 
-System.Console.WriteLine($"Сумма цифр в числе = {Summa( int number)}");
+System.Console.WriteLine($"Сумма цифр в числе {number} = {Summa( number)}");
