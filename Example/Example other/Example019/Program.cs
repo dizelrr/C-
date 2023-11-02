@@ -12,13 +12,26 @@ double Factorial (int n)
 for (int i=1; i<40; i++)
 System.Console.WriteLine($"{i}! ={Factorial(i)}"); 
 
+System.Console.WriteLine();
 
 // число фибаначе
+
 // f(1)=1
 // f(2)=1
 // f(n)= f(n-1) + f(n-2)
 
-int Fibonaci (int n)
+double Fibonaci (int n)
 {
-    if (n =)
+    if (n == 1 || n == 2) return 1;
+    else return Fibonaci(n-1) + Fibonaci(n-2);
 }
+for (int i=1; i<40; i++)
+{
+    System.Console.WriteLine(Fibonaci(i));
+}
+System.Console.WriteLine();
+for (int i=1; i<40; i++)
+{
+ System.Console.WriteLine(($"f{i}! ={Factorial(i)}"));
+}
+    
