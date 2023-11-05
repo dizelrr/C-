@@ -30,7 +30,7 @@ void PrintArray (int[] array) // метод печать массива
     }
 }
 
-int SummaArray (int[]array)
+int SummaArray (int[]array) // метод подсчета сколько цифр массиве больше 0
     {
         int count = 0;
         for (int i=0 ; i< array.Length; i++)
@@ -50,4 +50,4 @@ int [] array; // создаем маасив
 array = GlavArray(length); // заем его длину
 PrintArray(array); // печатаем массив
 System.Console.WriteLine();
-System.Console.WriteLine($"количество больше 0 = {SummaArray(array)}");
+System.Console.WriteLine($"количество больше 0 = {SummaArray(array)}"); // печатает метод подсчета сколько цифр массиве больше 0
