@@ -10,23 +10,23 @@ int ReadInt(string msg)
     return result;
 }
 
-int CalcSumm (int m, int n)
+int summ (int m, int n)
 {
     if (m == n)
     {
         return m;
     }
-    return m + CalcSumm (m + 1, n);
+    return m + summ (m + 1, n);
 }
 
-int m=ReadInt("Введите первое число: ");
-int n=ReadInt("Введите второе число: ");
+int m=ReadInt("Введите 1 число: ");
+int n=ReadInt("Введите 2 число: ");
 
 if (m > n)
 {
-    int temp = m;
+    int a = m;
     m = n;
-    n = temp;
+    n = a;
 }
 
-Console.WriteLine(CalcSumm (m, n));
+Console.WriteLine(summ (m, n));
