@@ -19,4 +19,4 @@ int Akkermana(int n, int m)
     }
     return Akkermana(n-1, Akkermana(n, m-1));
 }
-System.Console.WriteLine(Akkermana(ReadInt("Введите число n: "), ReadInt("Введите число m: ")));
+System.Console.WriteLine(Akkermana(ReadInt("Введите число m: "), ReadInt("Введите число n: ")));

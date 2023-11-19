@@ -9,7 +9,6 @@ int ReadInt(string msg)
     int result=Convert.ToInt32(Console.ReadLine());
     return result;
 }
-
 int summ (int m, int n)
 {
     if (m == n)
@@ -18,15 +17,12 @@ int summ (int m, int n)
     }
     return m + summ (m + 1, n);
 }
-
 int m=ReadInt("Введите 1 число: ");
 int n=ReadInt("Введите 2 число: ");
-
 if (m > n)
 {
     int a = m;
     m = n;
     n = a;
 }
-
 Console.WriteLine(summ (m, n));

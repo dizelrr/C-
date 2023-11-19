@@ -3,16 +3,25 @@
 // M = 4; N = 8 -> "4, 6, 8"
 
 
-
-Console.Write("Write number 1: ");
-        int n = int.Parse(Console.ReadLine());
-        Console.Write("Write number 2: ");
-        int m = int.Parse(Console.ReadLine());
-        for (int i = n; i <= m; i++)
+int ReadInt(string msg)
+{
+    Console.WriteLine(msg);
+    int result=Convert.ToInt32(Console.ReadLine());
+    return result;
+}
+void EvenNumbers(int m, int n)
+{
+    if (m<=n)
+    {
+        if (m%2==0)
         {
-            if (i % 2 == 0) 
-            {
-                Console.Write(i + " ");
-            }
+            System.Console.Write($"{m}\t");
         }
-        
+        EvenNumbers(m + 1, n);
+          return ;
+    }
+}
+int m = ReadInt("Введите число m: ");
+int n = ReadInt("Введите чисол n: ");
+EvenNumbers(m, n);
+
