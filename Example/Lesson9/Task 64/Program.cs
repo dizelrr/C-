@@ -3,27 +3,16 @@
 // M = 4; N = 8 -> "4, 6, 8"
 
 
-int ReadInt(string msg)
-{
-    Console.WriteLine(msg);
-    int result=Convert.ToInt32(Console.ReadLine());
-    return result;
-}
 
-void PrintNumbers(int i)
-{
-    if (i<=1){
-        Console.Write($"{i}\t");
-        return;
-    }
-    Console.Write($"{i}\t");
-    PrintNumbers(i-1);
-}
-
-int i=ReadInt("Введите натуральное число: ");
-while (i<1)
-{
-    Console.Write("Число не натуральное");
-    i=ReadInt("Введите натуральное число: ");
-}
-PrintNumbers(i);
+Console.Write("Write number 1: ");
+        int n = int.Parse(Console.ReadLine());
+        Console.Write("Write number 2: ");
+        int m = int.Parse(Console.ReadLine());
+        for (int i = n; i <= m; i++)
+        {
+            if (i % 2 == 0) 
+            {
+                Console.Write(i + " ");
+            }
+        }
+        
